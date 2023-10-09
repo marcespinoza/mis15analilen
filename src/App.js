@@ -112,12 +112,17 @@ function App() {
 </section>
 
 <section class="hero">
+<div class="hero-inner" id="section-1">
+    <figure></figure>
     <div className='page'>
       <Countdown countdownData={state} name={name} />      
-    </div>
+    </div>    </div>
+
 </section>
 
 <section class="hero">
+<div class="hero-inner" id="section-2">
+    <figure></figure>
       <div className="education-body">
                     <h1>
                     ¡Preparate para esta gran fiesta! <br />
@@ -128,22 +133,7 @@ function App() {
                 </div>
                 <div className='ig-account'>
                   @anaa_xd2
-                </div>
-        </div>
-</section>
-
-      <section class="hero">
-      <div className="education-body">
-                    <h1>
-                    ¡Preparate para esta gran fiesta! <br />
-                    Seguime y etiquetame en tus fotos y videos.
-                    </h1>
-                <div className="lottie-ig-id">
-                  <Lottie options={defaultOptions} />              
-                </div>
-                <div className='ig-account'>
-                  @anaa_xd2
-                </div>
+                </div> </div>
         </div>
 </section>
 
@@ -170,7 +160,7 @@ function App() {
             </div>
             <div className="fiestaHeader">
              <p >
-             ¡Te espero el viernes 03/11/23, salón upcn, sito en belgrano, para festejar este gran momento de mi vida!
+             ¡Te espero el viernes 03/11/23, salón de UPCN, sito en Belgrano N° 365, para festejar este gran momento de mi vida!
              <br />
                 Clickeá en el botón de abajo y encontrá las indicaciones para llegar al lugar
 
