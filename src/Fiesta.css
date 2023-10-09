@@ -13,9 +13,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    padding: 0.5rem 2rem 2rem 2rem;
-    color: rgb(252, 252, 252);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .fiestaHeader {
@@ -137,9 +138,6 @@
 
 
 @media (min-width: 992px) and (max-width: 1380px) {
-    .fiesta {
-        padding: 2rem 1rem 1rem 1rem;
-    }
     .fiestaContainer {
         padding: 1.5rem;
         margin-top: 1.5rem;
@@ -148,10 +146,6 @@
 
 
 @media screen and (max-width: 992px) {
-    .fiesta {
-        padding: 1rem;
-        min-height: 100%;
-    }
     .fiestaContainer {
         padding: 1rem;
         margin: 1rem 0;
@@ -179,9 +173,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .fiesta {
-        padding: 0.5rem;
-    }
+    
     .fiestaContainer {
         padding: 0.5rem;
     }
@@ -226,10 +218,9 @@
         align-items:center;
         cursor: pointer;
         font-family: "Roboto";
-        text-decoration: none;
         background: transparent;
         border-radius: 1.25em;
-  
+        text-decoration: none;
         border: currentColor 0.125em solid;
         box-shadow: 0 0 .2rem #fff,
         0 0 .2rem #fff,

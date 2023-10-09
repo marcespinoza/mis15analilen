@@ -1,37 +1,28 @@
 import React, { Component } from "react";
-import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import '../../src/Fiesta.css'
+
 
 class Contact extends Component {
   render() {
     return (
-      <div className="contact-body">
-        <Grid className="contact-grid">
-          <Cell col={6}>
-            <h2>Ismael Miah</h2>
-            <img style={{height: '250px'}} src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png" alt="avatar" />
-            <p style={{width: '75%', margin: 'auto', paddingTop: '1em'}}>
-              I have been very passionate about computers and programming since
-              my university life. I’m able to work well under pressure and adhere to strict deadlines.
-              Being worked for different projects helped me to adapt to the changes quickly and made me a mature team worker.
+      <div className="fiesta">
+            <div >
+                <h2>FIESTA</h2>
+            </div>
+            <div className="fiestaHeader">
+             <p >
+             ¡TE ESPERO EL VIERNES PARA FESTEJAR ESTE GRAN MOMENTO DE MI VIDA!
+             <br />
+                CLICKEA EN EL BOTON DE ABAJO Y ENCONTRA LAS INDICACIONES PARA LLEGAR AL LUGAR
+
             </p>
-          </Cell>
-          <Cell col={6}>
-              <h2>Contact Me</h2>
-              <hr />
-              <div className="contact-list">
-                  
-              <List>
-                  <ListItem>
-                      <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}><i className="fa fa-phone-square" aria-hidden='true'></i>+880 1642259188</ListItemContent>
-                  </ListItem>
-                  <ListItem>
-                      <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}><i className="fa fa-envelope" aria-hidden='true'></i>ismaelmiah.swe@gmail.com</ListItemContent>
-                  </ListItem>
-              </List>
-              </div>
-          </Cell>
-        </Grid>
-      </div>
+            </div>
+            <div>
+            <a href="https://www.google.com/maps/place/UPCN+-+Formosa/@-26.177815,-58.1698866,17z/data=!3m1!4b1!4m6!3m5!1s0x945ca5e81a246505:0x4433f925df26ef93!8m2!3d-26.177815!4d-58.1673117!16s%2Fg%2F11fz959btb?entry=ttu" target="_blank">
+               <button class="fiestaButton">Como llegar</button>
+               </a>
+            </div>
+        </div>
     );
   }
 }

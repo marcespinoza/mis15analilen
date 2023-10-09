@@ -4,17 +4,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .musica {
-    display: flex;
     background-image: url('./assets/png/neon_music.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    padding: 2.5rem 2rem 2rem 2rem;
-    color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .musicaHeader {
@@ -139,9 +140,7 @@
 
 
 @media (min-width: 992px) and (max-width: 1380px) {
-    .musica {
-        padding: 2rem 1rem 1rem 1rem;
-    }
+    
     .musicaContainer {
         padding: 1.5rem;
         margin-top: 1.5rem;
@@ -150,10 +149,7 @@
 
 
 @media screen and (max-width: 992px) {
-    .musica {
-        padding: 1rem;
-        min-height: 100%;
-    }
+   
     .musicaContainer {
         padding: 1rem;
         margin: 1rem 0;
@@ -181,9 +177,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .musica {
-        padding: 0.5rem;
-    }
+   
     .musicaContainer {
         padding: 0.5rem;
     }

@@ -12,7 +12,31 @@ import './DressCode.css'
 import './neon.css'
 import './Landing.css'
 import './Countdown.css'
+import './Experience.css'
 import Countdown  from '../src/Countdown.js';
+import { Pagination, EffectCoverflow, Autoplay  } from 'swiper'
+
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
+
+
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+
+import 'swiper/swiper.min.css'
+import 'swiper/modules/pagination/pagination.min.css'
+import uno from './assets/png/1.jpeg';
+import dos from './assets/png/2.jpeg';
+import tres from './assets/png/3.jpeg';
+import cuatro from './assets/png/4.jpeg';
+import cinco from './assets/png/5.jpeg';
+import seis from './assets/png/6.jpeg';
+import siete from './assets/png/7.jpeg';
+import ocho from './assets/png/8.jpeg';
+import nueve from './assets/png/9.jpeg';
+import diez from './assets/png/10.jpeg';
+import Resume from "./Components/Resume";
+import Aboutme from "./Components/Aboutme";
+import Contact from "./Components/Contact";
 
 
 function App() {
@@ -24,6 +48,29 @@ function App() {
        preserveAspectRatio: "xMidYMid slice"
     },
  };
+
+ const slider = [
+  {url: uno
+  },
+  { url: dos
+  },
+  { url: tres
+  },  
+  {url: cuatro
+  },
+  {url: cinco
+  },
+  {url: seis
+  },
+  {url: siete
+  },
+  {url: ocho
+  }, 
+  {url: nueve
+  },
+  {url: diez
+  },
+]
 
  const name = "Ana Lilén";
  const day = 3;
@@ -91,100 +138,33 @@ function App() {
  }, [currentYear, day, isItBday, month]);
 
   return (
-    <div className="demo-big-content">
+    <div >
 
 <section class="hero">
   <div class="hero-inner" id="section-0">
     <figure></figure>
-    <div className='landing'>
-            <div className='landing--container'>
-                             
-                    <div
-                        className='lcr--content'
-                    >
-                        <h1 class="neon"> Ana Lilen</h1>
-                        <h6 class="flicker" > <span class="fast-flicker">M</span>is<span class="flicker"> 1</span>5</h6>
-
-                </div>
-            </div>
-        </div>
+    <Aboutme/>
   </div>
 </section>
-
 <section class="hero">
-<div class="hero-inner" id="section-1">
+  <div class="hero-inner" id="section-0">
     <figure></figure>
     <div className='page'>
       <Countdown countdownData={state} name={name} />      
-    </div>    </div>
-
+    </div>
+  </div>
 </section>
-
 <section class="hero">
-<div class="hero-inner" id="section-2">
+  <div class="hero-inner" id="section-0">
     <figure></figure>
-      <div className="education-body">
-                    <h1>
-                    ¡Preparate para esta gran fiesta! <br />
-                    Seguime y etiquetame en tus fotos y videos.
-                    </h1>
-                <div className="lottie-ig-id">
-                  <Lottie options={defaultOptions} />              
-                </div>
-                <div className='ig-account'>
-                  @anaa_xd2
-                </div> </div>
-        </div>
+    <Contact/>
+  </div>
 </section>
-
 <section class="hero">
-  <div className="musica">
-    <h1>MUSICA</h1>
-      <div className="musicaHeader">
-      <p >
-      ¡Ayudame sugiriendo las canciones que pensás 
-      <br />
-      que no pueden faltar en la fiesta!
-      </p>
-      </div>
-      <div className='buttonMusic'>
-        <button class="music">Sugerir canción</button>
-      </div>
-   </div>
-</section>
-
-<section class="hero">
-    <div className="fiesta">
-            <div >
-                <h2>FIESTA</h2>
-            </div>
-            <div className="fiestaHeader">
-             <p >
-             ¡Te espero el viernes 03/11/23, salón de UPCN, sito en Belgrano N° 365, para festejar este gran momento de mi vida!
-             <br />
-                Clickeá en el botón de abajo y encontrá las indicaciones para llegar al lugar
-
-            </p>
-            </div>
-            <div>
-            <a href="https://www.google.com/maps/place/UPCN+-+Formosa/@-26.177815,-58.1698866,17z/data=!3m1!4b1!4m6!3m5!1s0x945ca5e81a246505:0x4433f925df26ef93!8m2!3d-26.177815!4d-58.1673117!16s%2Fg%2F11fz959btb?entry=ttu" target="_blank">
-               <button class="fiestaButton">Como llegar</button>
-               </a>
-            </div>
-        </div>
-</section>
-
-<section class="hero">
-    <div className="dressCode">
-            <div className="dressCode-header">
-                <h2>DRESS CODE</h2>
-            </div>           
-            <div className="dressCode-header">
-             <p >
-               Sport Elegante
-            </p>
-            </div>
-        </div>
+  <div class="hero-inner" id="section-0">
+    <figure></figure>
+    <Resume/>
+  </div>
 </section>
     </div>
   );
