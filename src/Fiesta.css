@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.fiesta {
+    display: flex;
+    background-image: url("./assets/png/neon_dancing.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0.5rem 2rem 2rem 2rem;
+    color: rgb(252, 252, 252);
+}
+
+.fiestaHeader {
+    display: flex;
+    margin-bottom: 2.5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+    font-family: 'Tilt Neon';
+    color: rgb(255, 255, 255);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+}
+
+.fiesta h2 {
+    margin-top: 2.0rem;
+    font-style: normal;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+    
+}
+
+.fiestaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    margin-top: 3.5rem;
+    padding: 0 2rem;
+}
+
+.skill--scroll {
+    width: 100%;
+    margin: 0 2rem;
+}
+
+
+.skill--box {
+    background: #FAFAFA;
+    box-shadow: #ffc0e8;
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    transition: 300ms ease-in-out;
+}
+
+.skill--box:hover  {
+    transform: scale(1.15);
+}
+
+
+.skill--box > img {
+    height: 50px;
+    pointer-events: none;
+}
+
+
+.skill--box h3 {
+    font-family: Big Shoulders Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.marquee {
+    padding: 3rem 0;
+}
+
+:root {
+    --clr-neon: hsl(317, 100%, 54%);
+    --clr-bg: hsl(323 21% 16%);
+  }
+
+.fiestaButton {
+    font-size:25px;
+    height:60px;
+    width:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FAFAFA;
+    border-color: transparent;
+    border-radius: 1.5em;
+    transition:all 0.5s;
+  }
+   
+  .fiestaButton:hover{
+      background-color:white;
+      color:palevioletred;      
+  }
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .fiesta {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .fiestaContainer {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .fiesta {
+        padding: 1rem;
+        min-height: 100%;
+    }
+    .fiestaContainer {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    .fiestaHeader h2 {
+        font-size: 3.2rem;
+    }
+    .skill--box {
+        width: 150px;
+        height: 150px;
+        margin: 1.2rem;
+        padding: 2rem 1rem;
+    }
+
+    .skill--box > img {
+        height: 45px;
+    }
+
+
+    .skill--box h3 {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .fiesta {
+        padding: 0.5rem;
+    }
+    .fiestaContainer {
+        padding: 0.5rem;
+    }
+    .fiestaHeader h2 {
+        font-size: 3rem;
+    }
+
+    .skill--scroll {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill--box {
+        width: 135px;
+        height: 135px;
+        margin: 1.2rem;
+        padding: 2rem 1rem;
+    }
+
+    .skill--box > img {
+        height: 40px;
+    }
+
+    .fiestaHeader h2 {
+        font-size: 2.5rem;
+    }
+
+    .skill--box h3 {
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+
+    .fiestaButton {
+        font-size:15px;
+        height:30px;
+        width:200px;
+        display:flex;
+        margin-bottom: 15px;    
+        justify-content:center;
+        align-items:center;
+        cursor: pointer;
+        font-family: "Roboto";
+        text-decoration: none;
+        background: transparent;
+        border-radius: 1.25em;
+  
+        border: currentColor 0.125em solid;
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe; 
+      }
+
+      .fiestaHeader{
+        margin-bottom: 1.5rem;
+    }
+
+      .fiestaHeader p{
+        display: flex;
+        margin-bottom: 0.3rem;
+        margin-top: 0.5rem;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+        font-family: "Tilt Neon";
+        justify-content: center; 
+        color: rgb(255, 255, 255);
+    }
+
+    .lottie-fiesta {
+        height: 100ox;
+        width: 100px;
+    }
+
+    .fiesta h2 {
+        margin-top: 1.0rem;
+        font-style: normal;
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: 'Yellowtail';
+        color: white;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #bc13fe,
+            0 0 82px #bc13fe,
+            0 0 92px #bc13fe,
+            0 0 102px #bc13fe,
+            0 0 151px #bc13fe;
+    }
+      
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}
+

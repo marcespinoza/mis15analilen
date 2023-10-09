@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.musica {
+    display: flex;
+    background-image: url('./assets/png/neon_music.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2.5rem 2rem 2rem 2rem;
+    color: black;
+}
+
+.musicaHeader {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    justify-content: center; 
+    color: rgb(8, 8, 8);
+}
+
+.musicaHeader p {
+    font-size: 3.0rem;
+    text-align: left;
+    font-weight:600; 
+    color: white;
+    font-family: 'Dosis';
+    justify-content: center ;
+    text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #bc13fe,
+                0 0 82px #bc13fe,
+                0 0 92px #bc13fe,
+                0 0 102px #bc13fe,
+                0 0 151px #bc13fe;
+}
+
+.musicaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    margin-top: 3.5rem;
+    padding: 0 2rem;
+}
+
+.musica--scroll {
+    width: 100%;
+    margin: 0 2rem;
+}
+
+
+.musica--box {
+    background: #FAFAFA;
+    box-shadow: #ffc0e8;
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    transition: 300ms ease-in-out;
+}
+
+.musica--box:hover  {
+    transform: scale(1.15);
+}
+
+
+.musica--box > img {
+    height: 50px;
+    pointer-events: none;
+}
+
+
+.musica--box h3 {
+    font-family: Big Shoulders Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.marquee {
+    padding: 3rem 0;
+}
+
+:root {
+    --clr-neon: hsl(313, 95%, 63%);
+    --clr-bg: hsl(323 21% 16%);
+  }
+
+.music {
+    font-size:25px;
+    height:60px;
+    width:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    font-family: "Roboto-light";
+    text-decoration: none;
+    transition:all 0.5s;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        0 0 5px palevioletred,
+        0 0 10px palevioletred,
+        0 0 20px palevioletred,
+        0 0 40px palevioletred,
+        0 0 80px palevioletred;
+  }
+
+  .buttonMusic {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+  }
+   
+  .music:hover{
+      background-color:palevioletred;
+      color:#fff;
+  }
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .musica {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .musicaContainer {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .musica {
+        padding: 1rem;
+        min-height: 100%;
+    }
+    .musicaContainer {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    .musicaHeader h2 {
+        font-size: 3.2rem;
+    }
+    .musica--box {
+        width: 150px;
+        height: 150px;
+        margin: 1.2rem;
+        padding: 2rem 1rem;
+    }
+
+    .musica--box > img {
+        height: 45px;
+    }
+
+
+    .musica--box h3 {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .musica {
+        padding: 0.5rem;
+    }
+    .musicaContainer {
+        padding: 0.5rem;
+    }
+    .musicaHeader h2 {
+        font-size: 3rem;
+    }
+
+    .musica--scroll {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .musica--box {
+        width: 135px;
+        height: 135px;
+        margin: 1.2rem;
+        padding: 2rem 1rem;
+    }
+
+    .musica--box > img {
+        height: 40px;
+    }
+
+    .musicaHeader h2 {
+        font-size: 1rem;
+    }
+
+    .musicaHeader p{
+        text-align: center;
+        font-size: 1.0rem;
+        font-family: 'Tilt Neon';
+        margin-bottom: 0.3rem;
+    }
+
+    .musica--box h3 {
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+
+    .musica h1 {
+            width: 100%;
+            font-family: 'Yellowtail';
+            font-size: 2.5rem;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            color: #fff;
+                text-shadow:
+                    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px #bc13fe,
+                    0 0 82px #bc13fe,
+                    0 0 92px #bc13fe,
+                    0 0 102px #bc13fe,
+                    0 0 151px #bc13fe;
+    }
+
+    .music {
+        font-size:15px;
+        height:30px;
+        width:200px;
+        display:flex;
+        margin-bottom: 15px;    
+        justify-content:center;
+        align-items:center;
+        cursor: pointer;
+        font-family: "Roboto";
+        text-decoration: none;
+        background: transparent;
+        border-radius: 1.25em;
+        text-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe; 
+  
+        border: currentColor 0.125em solid;
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe; 
+      }
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}
+

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+.education {
+    min-height: 50vh;
+    background-image: url("./assets/png/hashtagwallpaper.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.education-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./assets/png/neon_selfie.jpg");
+}
+
+.education-body h1{
+    font-size: 3rem;
+    font-family: 'Tilt Neon';
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+}
+
+.education-card {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    height: 140px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    transition: background-color 200ms ease-in-out;
+}
+
+.educard-img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.educard-img > img {
+    width: 40px;
+}
+
+.education-details{
+    margin-left: 0.6rem;
+}
+
+.education-details > h6 {
+    font-family: var(--primaryFont);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.education-details > h4 {
+    font-family: var(--primaryFont);
+    font-size: 1.225rem;
+    font-weight: 600;
+}
+
+.education-details > h5 {
+    font-family: var(--primaryFont);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.education-image {
+    box-sizing: border-box;
+    padding: 1rem;
+    flex: 0.35;
+    margin-top: 1rem;
+    pointer-events: none;
+}
+
+.education-image > img {
+    width: 100%;
+}
+
+.lottie-ig-id   {
+    height: 300px;
+    width: 300px;
+}
+
+.ig-account {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-family: 'Tilt Neon';
+    color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+}
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .education {
+        min-height: 100%;
+    }
+    .education-image {
+        display: none;
+    }
+    .education-description {
+        flex: 1;
+        margin: auto;
+    }    
+    .education-description > h1{
+        font-size: 3.2rem;
+    }
+    .education-card {
+        width: 100%;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .education-description > h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        align-self: center;
+    }
+    .education-description {
+        padding: 1rem;
+    }
+    .education-card {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        height: 130px;
+    }
+    .educard-img {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .educard-img > img {
+        width: 30px;
+    }
+    .education-details > h6 {
+        font-size: 0.85rem;
+        margin-bottom: 0.45rem;
+    }
+    
+    .education-details > h4 {
+        font-size: 1.125rem;
+        line-height: 126%;
+    }
+    
+    .education-details > h5 {
+        font-size: 1.05rem;
+        line-height: 126%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .lottie-ig-id   {
+        height: 100px;
+        width: 100px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .ig-account {
+        align-items: center;
+        align-content: center;
+        font-size: 1rem;
+        font-family: 'Roboto-medium';
+    }
+
+    .education-body h1{
+        font-size: 1.0rem;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        position:initial;
+        text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #bc13fe,
+      0 0 80px #bc13fe,
+      0 0 90px #bc13fe,
+      0 0 100px #bc13fe,
+      0 0 150px #bc13fe;
+    }
+    .education-body {
+        display: flex;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}
+
+.bgimg-1 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./assets/png/neon_music.jpg");
+    height: 100vh;
+    width: 100vh;
+}
+
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}

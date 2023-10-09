@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+.dressCode {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./assets/png/dress_code.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.dressCode-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dressCode-header > h1 {
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    font-family: var(--primaryFont);
+}
+
+.dressCode-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+.dressCode-body > p {
+    font-family: var(--primaryFont);
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.dressCode-bodycontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .dressCode {
+        padding: 2.7rem;
+    }
+    .dressCode-body > p {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .dressCode {
+        padding: 1.7rem;
+    }
+
+    .dressCode-body > p {
+        font-size: 1.25rem;
+        width: 85%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .dressCode-bodycontainer {
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .dressCode {
+        padding: 1rem;
+    }
+    .dressCode-header h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .dressCode-body > p {
+        font-size: 1.05rem;
+        width: 95%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .dressCode-bodycontainer {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dressCode {
+        padding: 0.5rem;
+    }
+    .dressCode-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .dressCode-header p{
+        width: 100%;
+        font-family: 'Tilt Neon';
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: #fff;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #bc13fe,
+            0 0 82px #bc13fe,
+            0 0 92px #bc13fe,
+            0 0 102px #bc13fe,
+            0 0 151px #bc13fe;
+    }
+    .dressCode-bodycontainer {
+        gap: 1rem;
+    }
+
+    .lottie-dress {
+        height: 100px;
+        width: 100px;
+    }
+    .dressCode-header h2 {
+        margin-top: 1.0rem;
+        font-style: normal;
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: 'Yellowtail';
+        color: white;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #bc13fe,
+            0 0 82px #bc13fe,
+            0 0 92px #bc13fe,
+            0 0 102px #bc13fe,
+            0 0 151px #bc13fe;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+}
+  
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}
